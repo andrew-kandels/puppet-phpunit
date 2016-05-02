@@ -57,7 +57,7 @@ class phpunit(
         ensure  => $ensure,
         mode    => 'a+x',
         path    => $install_path,
-        require => wget::fetch['phpunit-phar-wget'],
+        require => Wget::Fetch['phpunit-phar-wget'],
       }
     }
     /(absent)/: {
